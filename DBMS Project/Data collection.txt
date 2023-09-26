@@ -1,0 +1,17 @@
+Full Name as shown on NIC - string
+National Identity Card number - string
+Date of Birth - date
+gender - string
+Civil Status -string
+
+---------------------------
+Electoral Distric -string 
+polling Division - string
+Polling Distric Number - int
+Grama Niladhari Division -string
+Village/Street/Estate -string
+House number -int 
+---------------------
+
+create database collectData;
+create table collectPersonalData(FullName char,NIC char,DOB char,Gender char, Civil char,distric char,PDivision char,PDNumber int,GSDivision char,Village char,HNumber int);
