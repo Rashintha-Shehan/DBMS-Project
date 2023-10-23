@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Data Preview</title>
+</head>
+<body style="background-color: powderblue" ><div class ="contain1">
+	<img src="C:\xampp\htdocs\symbole.png" >
+		<img src="C:\xampp\htdocs\DBMS Project\Website\23f19d64-8b85-49e3-aaa3-ac0a31bd29b9.jpg">
+		<h1>Registration Successfully </h1>
+
+
+</div>
+
+</div>
+    
+    <div >
+    <ul> <h3>Personal Details</h5>
+        <li><strong>Full Name:</strong> <span id="fullname"></span></li>
+        <li><strong>NIC Number:</strong> <span id="nic"></span></li>
+        <li><strong>Date of Birth:</strong> <span id="dob"></span></li>
+        <li><strong>Gender:</strong> <span id="gender"></span></li>
+        <li><strong>Civil Status:</strong> <span id="civil"></span></li>
+
+</div>
+ <div  >
+    <ul> <h3>Information About Electoral Area</h5>
+        <li><strong>Electoral District:</strong> <span id="district"></span></li>
+        <li><strong>Polling Division:</strong> <span id="polling"></span></li>
+        <li><strong>Polling District Number:</strong> <span id="pollingno"></span></li>
+        <li><strong>Grama Niladhari Division:</strong> <span id="grama"></span></li>
+        <li><strong>Village/Street/Estate:</strong> <span id="village"></span></li>
+        <li><strong>House Number:</strong> <span id="houseno"></span></li>
+  </ul>
+ <div class="leftt">
+    <ul><h3>Information About Chief Occupant</h5>
+        <li><strong>Chief Occupant's Name:</strong> <span id="chiefname"></span></li>
+        <li><strong>Chief Occupant's NIC:</strong> <span id="chiefnic"></span></li>
+        <li><strong>Relationship to Chief Occupant:</strong> <span id="relationship"></span></li>
+        <li><strong>Mobile Number:</strong> <span id="mobile"></span></li>
+    </ul>
+
+    <script>
+        
+        function getURLParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+  
+        document.getElementById("fullname").textContent = getURLParameter("firstname");
+        document.getElementById("nic").textContent = getURLParameter("NIC");
+        document.getElementById("dob").textContent = getURLParameter("birthday");
+        document.getElementById("gender").textContent = getURLParameter("gender");
+        document.getElementById("civil").textContent = getURLParameter("Civil");
+        document.getElementById("district").textContent = getURLParameter("Districts");
+        document.getElementById("polling").textContent = getURLParameter("PollingDiv");
+        document.getElementById("pollingno").textContent = getURLParameter("dnumber");
+        document.getElementById("grama").textContent = getURLParameter("GSDD");
+        document.getElementById("village").textContent = getURLParameter("villagee");
+        document.getElementById("houseno").textContent = getURLParameter("Housenumber");
+        document.getElementById("chiefname").textContent = getURLParameter("Cfirstname");
+        document.getElementById("chiefnic").textContent = getURLParameter("C_NIC");
+        document.getElementById("relationship").textContent = getURLParameter("Relationship1");
+        document.getElementById("mobile").textContent = getURLParameter("phnn");
+    </script>
+</body>
+</html>
